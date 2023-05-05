@@ -18,3 +18,14 @@ console.log(user);
 
 console.log(typeof user["age"] === "number")
 console.log(user.age * 2)
+
+let game ={};
+game.name = "Cricket";
+game.players = 11;
+game["Stadium name"] = "MCG"
+
+console.log(game)
+
+for(let key in game){
+    console.log(game[key]);
+}
