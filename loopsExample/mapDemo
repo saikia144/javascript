@@ -1,0 +1,18 @@
+//The .map() function applies to to every element inside the array . A new array is then returned
+//In simple words .map() function takes an array as, does something to every element in the array and 
+//returns a new array
+
+
+let multiplyTwo = (a) =>{
+    return a.map(x => x*2);
+}
+
+const nums = [1,2,3,4,5,6];
+
+console.log(multiplyTwo(nums))
+
+console.log(nums.map(x => x-2));
+
+let newArr = nums.map(x => x-2)
+console.log(typeof newArr === "function")
+
