@@ -12,6 +12,8 @@ console.log(row2.children);
 
 //NodeValue mostly returns null because I used it with element nodes(<tr>,<td>,<th>,<h1>,etc...). Use nodeValue with
 //textnodes such as p, span,div,etc..
+
+//Displaying each individual text node seperately
 let flag = true;
 while (flag) {
   if (row1.hasChildNodes()) {
