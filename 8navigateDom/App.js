@@ -31,3 +31,10 @@ first.nextElementSibling.style.color = "blue";
 const last = document.getElementById("last");
 console.log(last);
 last.previousElementSibling.previousElementSibling.style.color = "green";
+
+const node = document.getElementById("div1");
+const a = document.createAttribute("my_attrib");
+a.value = "newVal";
+console.log(a);
+node.setAttributeNode(a);
+console.log(node.getAttribute("my_attrib")); // "newVal"
